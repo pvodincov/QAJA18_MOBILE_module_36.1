@@ -1,1 +1,2 @@
 # QAJA_MOBILE
+init
