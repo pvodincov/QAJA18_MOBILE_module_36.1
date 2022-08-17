@@ -33,16 +33,17 @@ public class CoreTestCase {
         this.driver.quit();
     }
 
-    private DesiredCapabilities getAndroidDesiredCapabilities() {
+    private DesiredCapabilities getAndroidDesiredCapabilities()
+    {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("avd","ver10");
+        capabilities.setCapability("avd","Pixel4_API29");
         capabilities.setCapability("deviceName","AndroidTestDevice");
         capabilities.setCapability("platformVersion","10.0");
         capabilities.setCapability("automationName","Appium");
         capabilities.setCapability("appPackage","org.wikipedia");
         capabilities.setCapability("appActivity",".main.MainActivity");
-        capabilities.setCapability("app","/Users/vitalijkotov/SFMobile/apps/org.wikipedia.apk");
+        capabilities.setCapability("app","C:\\Users\\tester\\IdeaProjects\\QAJA_MOBILE\\apps\\org.wikipedia.apk");
         return capabilities;
     }
 

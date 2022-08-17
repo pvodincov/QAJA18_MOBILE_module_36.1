@@ -1,5 +1,5 @@
 package lib.ui;
 
 public class PlatformSelector {
-    public final static String PLATFORM = "ios";
+    public final static String PLATFORM = "android";
 }
