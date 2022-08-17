@@ -38,9 +38,9 @@ public class SearchTest extends CoreTestCase {
                 "Cannot find result 'Island fo Indonesia' on 'Java' search",
                 20
 
+
         );
         expectedResult.click();
-
 
     }
 }
