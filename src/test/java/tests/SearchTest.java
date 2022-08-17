@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class SearchTest extends CoreTestCase {
 
     @Test
-    public void testSearch() {
+    public void testFindJava() {
 
         MainPageObject mainPO = new MainPageObject(this.driver);
 
@@ -31,15 +31,15 @@ public class SearchTest extends CoreTestCase {
                 "Cannot find search input"
         );
 
-        searchInput.sendKeys("wfewfewfwegweg");
+        searchInput.sendKeys("Java");
 
-        final String actualResult = String.valueOf(mainPO.waitForElementPresent (
-                 "xpath://*[contains(@text,'No results found')]",
-                "Cannot find Search results",
+        WebElement expectedResult = mainPO.waitForElementPresent (
+                 "xpath://*[contains(@text,'Island of Indonesia')]",
+                "Cannot find result 'Island fo Indonesia' on 'Java' search",
                 20
 
-        ));
-        System.out.println(actualResult);
+        );
+        expectedResult.click();
 
 
     }
