@@ -39,7 +39,7 @@ public class SearchTest extends CoreTestCase {
                 20
 
         ));
-        System.out.println(actualResult);
+
 
 
     }
